@@ -1,0 +1,24 @@
+<!-- filter results panel -->
+
+<zf-panel id="filters" position="right" zf-swipe-close="right">
+	<a zf-close="" class="close-button">×</a>
+	<div class="grid-content">
+		<h4>Activities</h4>
+		<ul class="no-bullet">
+			<li ng-repeat="activity in vars.activities">
+				<input id="{{ activity }}" type="checkbox"><label for="{{ activity }}">{{ activity }}</label>
+			</li>
+		</ul>
+
+		<h4>Length</h4>
+		<ul class="no-bullet">
+			<li ng-repeat="length in vars.lengths">
+				<input id="{{ length }}" type="checkbox"><label for="{{ length }}">{{ length }}</label>
+			</li>
+		</ul>
+
+	</div>
+</div>
+
+
+
