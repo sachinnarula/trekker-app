@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" ng-app="application">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trekker</title>
+    <link href="./assets/css/app.css" rel="stylesheet" type="text/css">
+    <script src="./assets/js/foundation.js"></script>
+    <script src="./assets/js/templates.js"></script>
+    <script src="./assets/js/routes.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <style>
+
+        #faces{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        border: 81px solid white;
+        }
+
+        #face-area{
+        height: 640px;
+        width: 480px;
+        position: relative;
+        }
+
+        .face {
+        height:100%;
+        width:18.4%;
+        float:left;
+        }
+
+        .face img {
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1;
+        pointer-events: none;
+        }
+
+        .face.default img {
+        z-index:2;
+        }
+
+        .face:hover > img {
+        z-index:3;
+        }
+
+    </style>
+
+  </head>
+  <body>
+      <div id="faces">
+    <div id="face-area">
+      <div id="image-1" class="face">
+        <img src="http://sachinnarula.github.io/trekker-app/assets/img/i-5.png" />
+      </div>
+      <div id="image-1" class="face">
+        <img src="http://sachinnarula.github.io/trekker-app/assets/img/i-4.png" />
+      </div>
+      <div id="image-2" class="face default">
+        <img src="http://sachinnarula.github.io/trekker-app/assets/img/i-1.png" />
+      </div>
+      <div id="image-4" class="face">
+        <img src="http://sachinnarula.github.io/trekker-app/assets/img/i-2.png" />
+      </div>
+      <div id="image-5" class="face">
+        <img src="http://sachinnarula.github.io/trekker-app/assets/img/i-3.png" />
+      </div>
+
+    </div>
+  </div>
+  </body>
+</html>
